@@ -1,0 +1,379 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link rel="stylesheet" type="text/css" href="includes/style.css">
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=true'></script>
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div class="header">
+		<div class="logo"></div>
+        <div class="bricks"></div>
+	</div>
+	<div data-role="content">	
+        <ul data-role="listview" class="mainmenu">
+          <li><a href="#page2">
+            <h3>Pubs</h3>
+            <p>List of Pubs in Worcester</p>
+            </a></li>
+          <li><a href="#page3">
+          	<h3>Restaurants</h3>
+            <p>List of Restaurants in Worcester</p>
+          </a></li>
+          <li><a href="#page4">
+            <h3>Map</h3>
+            <p>Geolocation for Worcester</p>
+            </a></li>
+          <li><a href="#page5">
+            <h3>Contact</h3>
+            <p>Contact Us</p>
+            </a></li>
+      </ul>	
+	</div>
+	<div data-role="footer" class="footerBG"></div>
+</div>
+
+<div data-role="page" id="page2">
+	<div class="header">
+		<div class="logo"></div>
+        <div class="bricks"></div>
+	</div>
+	<div data-role="content" class="bodyDesign">
+		<h2>Worcester Pubs List</h2>
+        <ul data-role="listview" data-filter="true">
+        	<li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Heroes Bar Worcester</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>26-32 Friar Street<br>
+                        Worcester, WR1 2LZ</h5>
+                        <h5>Open from 5pm till 1am</h5>
+                        <p><a href="http://tinyurl.com/pj653og" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:07810 883721" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Monroe's Cellar Bar</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>43 Foregate Street<br>
+                        Worcester, WR1 1EE</h5>
+                        <h5>Open from 5pm till 5am</h5>
+                        <p><a href="http://tinyurl.com/od48e5u" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 619374" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>The Postal Order</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>18 Foregate Street<br>
+                        Worcester, WR1 1DN</h5>
+                        <h5>Open from 8am till 1am</h5>
+                        <p><a href="http://tinyurl.com/naj7mhx" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 22373" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>The Crown</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>Crown Passage<br>
+                        Worcester, WR1 3LL</h5>
+                        <h5>Open from 8am till 12am</h5>
+                        <p><a href="http://tinyurl.com/o27xnmk" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 721870" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Keystones Cafe Bar</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>1 Copenhagen Street<br>
+                        Worcester, WR1 2HB</h5>
+                        <h5>Open from 11am till 1am</h5>
+                        <p><a href="http://tinyurl.com/mqwprhd" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 731437" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Eagle Vaults</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>2 Friar Street<br>
+                        Worcester, WR1 2LZ</h5>
+                        <h5>Open from 11:30am till 11pm</h5>
+                        <p><a href="http://tinyurl.com/n2focac" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 616378" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>	
+	</div>
+    <div data-role="footer" class="footerBG">
+    	<h3><a href="#page" data-role="button" data-icon="back" data-iconpos="right">Back</a></h3>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div class="header">
+		<div class="logo"></div>
+        <div class="bricks"></div>
+	</div>
+	<div data-role="content" class="bodyDesign">	
+		<h2>Worcester Restaurants List</h2>
+        <ul data-role="listview" data-filter="true">
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>The Thai Gallery</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>26-32 Friar Street<br>
+                        Worcester, WR1 2LZ</h5>
+                        <h5>Open from 5:30pm till 11pm</h5>
+                        <p><a href="http://tinyurl.com/pvfqys4" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 25451" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Pizza Hut</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>Shrub Hill Retail Park<br>
+                        George Street<br>
+                        Worcester, WR1 2DD</h5>
+                        <h5>Open from 12pm till 10:30pm</h5>
+                        <p><a href="http://tinyurl.com/mg8v33f" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 610066" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>The Four Seasons</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>61 Lowesmoor<br>
+                        Worcester, WR1 2RS</h5>
+                        <h5>Opening times<br>
+                        Monday - Wednesday:<br>
+                        05.00pm – 11.30pm<br><br>
+						Thursday - Saturday:<br>
+						12.00pm – 02.00pm<br>
+						05.00pm – 11.30pm<br><br>
+						Sunday:<br>
+                        12.00pm – 11.00pm</h5>
+                        <p><a href="http://tinyurl.com/pgjbx7k" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 27026" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Amigos Mexican Restaurant</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>41 Friar Street<br>
+                        Worcester, WR1 2NA</h5>
+                        <h5>Opening times<br>
+                        Monday-Sunday:<br>
+                        Closed<br><br>
+                        Tuesday-Saturday:<br>
+                     	6.00pm - 10.00pm</h5>
+                        <p><a href="http://tinyurl.com/puk6pow" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 25552" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>The Lounge<br>Hodson Restaurant</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>100 High Street<br>
+                        Worcester, WR1 2HW</h5>
+                        <h5>Open from 8am till 11pm</h5>
+                        <p><a href="http://tinyurl.com/nloxeb5" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 21036" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<div data-role="footer" class="footerBG">
+		<h3><a href="#page" data-role="button" data-icon="back" data-iconpos="right">Back</a></h3>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div class="header">
+		<div class="logo"></div>
+        <div class="bricks"></div>
+	</div>
+  	<div data-role="content" class="bodyDesign">
+  		<h2>Map of Worcester</h2>
+        
+        <div id="mapCanvas" style="width:100%; height:100%; min-width:300px; min-height:300px"></div>
+        
+<script type="text/javascript">
+// initialize the google Maps 	
+	
+     function initializeGoogleMap() {
+		// set latitude and longitude to center the map around
+		var latlng = new google.maps.LatLng(52.1930, 
+											-2.2223);
+		
+		// set up the default options
+		var myOptions = {
+		  zoom: 15,
+		  center: latlng,
+		  navigationControl: true,
+		  navigationControlOptions: 
+		  	{style: google.maps.NavigationControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.TOP_LEFT },
+		  mapTypeControl: true,
+		  mapTypeControlOptions: 
+		  	{style: google.maps.MapTypeControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.TOP_RIGHT },
+
+		  scaleControl: true,
+		   scaleControlOptions: {
+        		position: google.maps.ControlPosition.BOTTOM_LEFT
+    	  }, 
+		  mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  draggable: true,
+		  disableDoubleClickZoom: false,
+		  keyboardShortcuts: true
+		};
+		var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+		if (false) {
+			var trafficLayer = new google.maps.TrafficLayer();
+			trafficLayer.setMap(map);
+		}
+		if (false) {
+			var bikeLayer = new google.maps.BicyclingLayer();
+			bikeLayer.setMap(map);
+		}
+		if (false) {
+			addMarker(map,52.1930,-2.2223,"We are here");
+		}
+	  }
+
+	  window.onload = initializeGoogleMap();
+
+	 // Add a marker to the map at specified latitude and longitude with tooltip
+	 function addMarker(map,lat,long,titleText) {
+	  	var markerLatlng = new google.maps.LatLng(lat,long);
+	 	var marker = new google.maps.Marker({
+      		position: markerLatlng, 
+      		map: map, 
+      		title:"We are here",
+			icon: ""});   
+	 }
+</script>
+        
+    </div>
+  	<div data-role="footer" class="footerBG">
+    <h3><a href="#page" data-role="button" data-icon="back" data-iconpos="right">Back</a></h3>
+  </div>
+</div>
+
+<div data-role="page" id="page5">
+	<div class="header">
+		<div class="logo"></div>
+        <div class="bricks"></div>
+	</div>
+    <div data-role="content" class="bodyDesign">
+        <ul data-role="listview" data-filter="false">
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>University of Worcester</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>City Campus<br>Castle Street<br>
+                        Worcester, WR1 3AS</h5>
+                        <h5>Open from 9am till 6:30pm</h5>
+                        <p><a href="http://tinyurl.com/lsb496j" data-role="button" data-icon="info" data-iconpos="left">View Map</a></p>
+                        <p><a href="tel:01905 542444" data-role="button" data-icon="info" data-iconpos="left">Call us</a></p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="ui-grid-a">
+                    <div class="ui-block">
+                        <br>
+                        <h4>Adrian Bartos</h4>
+                    </div>
+                    <div class="ui-block">
+                        <h5>e-Mail Address:<br>
+                        bara1_12@uni.worc.ac.uk</h5>
+                        <p><a href="tel:07938 850571" data-role="button" data-icon="info" data-iconpos="left">Call me</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+  	<div data-role="footer" class="footerBG">
+    <h3><a href="#page" data-role="button" data-icon="back" data-iconpos="right">Back</a></h3>
+  	</div>
+</div>
+
+</body>
+</html>
